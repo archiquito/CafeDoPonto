@@ -46,16 +46,17 @@ body {
 }
 .box::after{
   content: "";
-
   background: #fff;
   position: absolute;
   top: -9px;
-  right: -9px;
-  width: 20px;
+  right: 0px;
+  width: 10px;
   height: 20px;
-  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
   z-index: 2;
   overflow: hidden;
+  
 }
 .box h1,
 .box h2,
@@ -85,10 +86,11 @@ body {
   background: #fff;
   position: absolute;
   bottom: -9px;
-  right: -9px;
-  width: 20px;
+  right: 0px;
+  width: 10px;
   height: 20px;
-  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
   z-index: 3;
   overflow: hidden;
 
