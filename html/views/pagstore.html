@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/normalize.css">
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/bootstrap.min.css">
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/wifi.css">
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/font-awesome.min.css">	
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/montserrat.css">
+
+   
+<title>WIFI ULTRA</title>
+
+<style type="text/css">
+
+body{
+  background: transparent;
+ 
+  height: 100%;
+  width: 100%;
+
+}
+
+</style>
+
+<%
+if(os === 'ios' || os === 'ios-captive'){
+	altura = "1000";
+	jsc = 0;
+}else{
+	altura = "100%";
+	jsc = 1;
+}
+
+%>
+</head>
+
+<body>
+
+
+<div class="col-xs-12" style="background: #fff; padding: 10px; width:100%; height: auto; display: block">
+<a href="#" onclick="document.getElementById('wifi-triibo').submit();"  id="btnPag" class="btn btn-primary" style="text-align: center " >
+ <strong> Clique aqui para liberar a internet!</strong>
+</a>
+</div>
+       <form action="<%= link %>" method="POST" id="wifi-triibo" style="padding: 0;margin: 0">
+			<input type="hidden" name="username" value="<%= user %>">
+			<input type="hidden" name="password" value="<%= password %>">
+			<input type="hidden" name="dst" value="<%= dst %>">
+			<input type="hidden" id="routerPath" value="<%= ROUTERPATH %>">			
+			<input type="hidden" name="popup" value="false">
+		</form> 
+<!--<iframe src="<%=dst%>" allowfullscreen frameborder="0" width="100%" height="<%=altura%>"  ></iframe>-->
+<iframe src="pag_propaganda.html" allowfullscreen frameborder="0" width="100%" height="<%=altura%>"  ></iframe>
+
+<script type="text/javascript" src="<%= ROUTERPATH %>/jquerym.min.js"></script>
+<script>
+$(document).ready(function () {	
+	$('#btnPag').click(function() {
+		var routerPath = $("#routerPath").val();
+		$.post(routerPath + "/BTNPGSTR");
+		
+	});
+});
+</script>
+
+</body>
+</html>

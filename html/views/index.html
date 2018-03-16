@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Continuar Navegando</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="refresh" content="2; url=<%= linkOrig %>">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="expires" content="-1">
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/advstyle.css">
+		<script language="JavaScript">
+			<!--
+			var popup = '';
+			function openOrig() {
+				if (window.focus) popup.focus();
+				location.href = unescape('<%= linkOrigEsc %>');
+			}
+			function openAd() {
+				location.href = unescape('<%= linkRedirectEsc %>');
+			}
+			function openAdvert() {
+				if (window.name != 'hotspot_advert') {
+					popup = open('<%= linkRedirect %>', 'hotspot_advert', '');
+					setTimeout("openOrig()", 1000);
+					return;
+				}
+				setTimeout("openAd()", 1000);
+			}
+			//-->
+		</script>
+	</head>
+	<body onLoad="openAdvert()">
+		<div>
+			<div class="header">
+				<img class="logotop" src="<%= ROUTERPATH %>/icon-wifi-ipiranga.png">
+			</div>
+			<div class="card" style="margin-top: -150px;">
+				<div class="delimiter">
+					<img src="<%= ROUTERPATH %>/ad.jpg" alt="">
+					<a href="<%= linkRedirect %>" target="hotspot_advert" class="btn">Continuar Navegando</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+

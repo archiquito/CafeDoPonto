@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/normalize.css">
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/bootstrap.min.css">
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/wifi.css">
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/font-awesome.min.css">	
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/montserrat.css">
+		<link rel="stylesheet" href="<%= ROUTERPATH %>/material-font.css">
+	</head>
+	<body class="wifilogin">		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-xs-12">
+						<div class="notificationbox">				
+								<div class="cadastrar">
+									<div>
+										<form method="post" action="<%= ROUTERPATH %>/cadastrar" id="cadastroform">
+
+											<div class="headerwifi">
+												<div style="text-align: center; width: 100%;">
+													<p><img class="iconWifi" src="<%= ROUTERPATH %>/icon-wifi-ipiranga.png" /></p>
+												</div>
+
+											</div>
+											<div class="clearfix"><br><br><br><br></div>
+
+											<!--<h2 class="title"><strong>Você ainda não está cadastrado no para acesso ao Wifi.</strong></h2>-->
+											<span> Olá, este é seu <strong>1&#176; acesso</strong>!!  \O/
+												<p>Confira seus dados e clique em <strong>OK</strong> para continuar</p>
+											</span>
+											<span>
+												<p>- nome: <b> <%= USER_NOME %> </b></p>
+											 	<p>- email: <b> <%= USER_LOGIN %> </b></p>
+											</span>
+											<span>Algo errado? :( Clique em <strong>Voltar</strong></span>
+											<a onclick="hidecadastrar()" class="btn btn-default" style="width: 25%; float: left; text-align: center; margin: 10px 10px 10px 40px; padding: 6px 12px 6px 6px"><< Voltar</a>
+
+											<a onclick="formcadastro()" class="btn btn-default" style="background-color:#ffffff; color:#000000; width: 25%; float: right; text-align: center; margin: 10px 30px 10px 10px">OK >></a>
+											</p>
+										 </form>
+									</div>
+								</div>
+								<div class="aguarde">				
+									<p><img class="iconWifi" src="<%= ROUTERPATH %>/icon-wifi-ipiranga.png" /><br><br></p>
+									<span>Aguarde...</span><br>
+									<svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+									   <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+									</svg>
+
+								</div>
+								<div class="error">
+									<div class="col-md-12">
+										<span class="title"><i class="fa fa-frown-o" style="font-size: 30px" aria-hidden="true"></i><br><br>Ops! Algo deu errado...:( </span>
+										<span class="errormsg"></span>
+
+										<% if(ERROR_CODE == 6){ %>
+											<a onclick="hideerror()" class="btn btn-default" style="text-align: center; color: #2F68A9"><< VOLTAR</a>
+										<% }else{ %>
+											<a onclick="hideerror()" class="btn btn-default" style="text-align: center; color: #2F68A9"><< VOLTAR</a>
+										<% }%>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="headerwifi">
+								<div style="text-align: center; width: 100%;">
+									<p><img class="iconWifi" src="<%= ROUTERPATH %>/icon-wifi-ipiranga.png" /><br></p>
+								</div>
+							</div>
+							
+						<div class="clearfix"></div>
+							<div class="col-md-12">
+								
+									
+									<br><br><br><br>
+									<!--<p> <hr style="border-color: #ccc"></p>-->
+																
+									<center>
+												<p style="font-size: 14px">Login com <span style="font-weight: 500"> Rede Sociais</span></p>
+												
+												<a onclick="facebooklogin()" class="btn btn-default btn-circle btn-lg" style="margin: 6px; background-color: #3B5998; border-color: #3B5998; color:#fff; padding: 16px 18px "><span class="fa fa-facebook fa-lg "></span></a>
+												<% if(os == 'ios-captive' || os == 'ios'){ %>													
+												<% }else{ %>
+													<a onclick="googlelogin()" class="btn btn-default btn-circle btn-lg" style="margin: 6px; padding: 10px"><img src="<%= ROUTERPATH %>/icon-google.png" width="26" height="27" /></a>
+												<%}%>
+												
+										<p>Ou utilizar meu <strong>e-mail</strong></p>
+											
+											<div class="form-group spaceing ">
+													<form method="post" action="<%= ROUTERPATH %>/dologin" id="mailform">
+														<input type="text" class="inputWifi" name="nome" placeholder="Nome" value="<%= USER_NOME %>" />
+														<input style="text-transform: lowercase" type="text" class="inputWifi" name="user" placeholder="Email" value="<%= USER_LOGIN %>" />
+														<input type="password" class="inputPass" name="password" id="password" placeholder="Senha" />							  
+														<button class="button inputWifi" type="button" id="showPassword" style="width:auto; display: block; font-size: 20px; background:transparent;  cursor: pointer; float: right;  color:#2977B5; text-align: center; padding: 6px 16px"><i class="material-icons">visibility</i></button>
+														<!--<a href="#" class="btn bn-link" style="color: #fff; text-align: right" data-toggle="modal" data-target="#modalEsqueciSenha">Esqueci minha senha</a>-->
+														<a class="btn btn-primary btn-lg btn-block" style="text-align:center; margin-top: 12px" onclick="formlogin()">ENTRAR</a>
+														
+												</form>
+												</div>
+												
+								</center>
+									
+							
+								<!--<% if(os != 'ios-captive'){ %>	
+								<a href="https://app.triibo.com.br/#/termosdeuso">
+									<div class="tinylink"><i class="material-icons">description</i> Termos de Uso</div>
+								</a>
+								<% } %>-->
+								<div class="spaceblock"></div>
+								
+								</div>
+								
+								<input type="hidden" id="idfacebook" value="<%= idfacebook %>"></input>
+								<input type="hidden" id="myurl" value="<%= url %>"></input>
+								<input type="hidden" id="error" value="<%= error %>"></input>
+								<input type="hidden" id="cadastrar" value="<%= cadastrar %>"></input>
+								<input type="hidden" id="signInWithEmail" value="<%= signInWithEmail %>"></input>
+								<input type="hidden" id="googleurl" value="<%= googlelogin %>"></input>
+				</div>
+			</div>
+		</div>
+	
+		<script type="text/javascript" src="<%= ROUTERPATH %>/jquery.min.js"></script>
+		<script type="text/javascript" src="<%= ROUTERPATH %>/jquery.mask.min.js"></script>
+		<script type="text/javascript" src="<%= ROUTERPATH %>/bootstrap.min.js"></script>
+		<script type="text/javascript" src="<%= ROUTERPATH %>/login.js"></script>
+		<script type="text/javascript" src="<%= ROUTERPATH %>/detectmobile.js"></script>
+
+	</body>
+</html>

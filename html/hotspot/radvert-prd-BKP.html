@@ -1,0 +1,184 @@
+<html>
+	<head>
+		<title>Ultra > Continuar Navegando</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta http-equiv="refresh" content="2; url=$(link-orig)"> -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="expires" content="-1">
+		<link rel="stylesheet" href="http://10.5.50.1/normalize.css">
+		<link rel="stylesheet" href="http://10.5.50.1/bootstrap.min.css">
+		<link rel="stylesheet" href="http://10.5.50.1/wifi.css">
+		<link rel="stylesheet" href="http://10.5.50.1/font-awesome.min.css">
+		<link rel="stylesheet" href="http://10.5.50.1/montserrat.css">
+		<style>
+		.card{
+			  margin-top: 50px;
+			}
+			.card .delimiter{
+			  width: 400px;
+			  margin: 0 auto;
+			}
+			.card .delimiter img{
+			  width: 100%;
+			  border-radius: 10px;
+			}
+			.radioContainer{
+				display: inline-block;
+    			text-align: center;
+    			width: 32%;
+			}
+		</style>
+		<script language="JavaScript"> 
+			window.location="http://apexoraidp.ultra.corp/ords/f?p=WIFI:1:0::NO::P0_CPF_CNPJ,P0_ID_AP:11111111111,3"; 
+			</script> 
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-xs-12">
+					<div class="headerwifi">
+						<div style="text-align: center; width: 100%;">
+							<img class="iconWifi" src="http://10.5.50.1/icon-wifi-ipiranga.png"  />
+						</div>
+					</div>
+			<div class="col-md-12 text-left" style="margin-top: 80px">
+				<div id="container1" style="display:none;">
+						<p style="font-size: 14px">	<strong>Como voce vê a qualidade dos nossos produtos?</strong></p>
+							<form action="$(link-redirect)" method="get" id="form1" name="form2" target="_blank">
+							<div class="radioContainer"><input type="radio" id="form1radio1" name="form1" value="otimo"> Ótimo</div>
+							<div class="radioContainer"><input type="radio" id="form1radio2" name="form1" value="medio"> Médio</div>
+							<div class="radioContainer"><input type="radio" id="form1radio3" name="form1" value="ruim"> Ruim</div>
+							<input type="submit" target="hotspot_advert" class="hidden"><br><br>	
+							<div onClick="openAdvert('1')" target="hotspot_advert" id="btn1" class="btn btn-primary disabled" style="text-align: center	">Continuar Navegando</div>
+						</form>
+					</div>
+					<div id="container2" style="display:none;">
+						<p style="font-size: 14px"><strong>Como você vê a limpeza da loja?</strong></p>
+						<form action="$(link-redirect)" method="get" id="form2" name="form2" target="_blank">
+							<div class="radioContainer"><input type="radio" id="form2radio1" name="form2" value="otimo"> Ótimo</div>
+							<div class="radioContainer"><input type="radio" id="form2radio2" name="form2" value="medio"> Médio</div>
+							<div class="radioContainer"><input type="radio" id="form2radio3" name="form2" value="ruim"> Ruim</div>
+							<input type="submit" target="hotspot_advert" class="hidden"><br><br>
+							<div onClick="openAdvert('2')" target="hotspot_advert" id="btn2" class="btn btn-primary disabled" style="text-align: center	">Continuar Navegando</div>
+						</form>
+					</div>
+					<div id="container3" style="display:none;">
+						<p style="font-size: 14px"><strong>Como você vê a disponibilidade dos produtos?</strong></p>
+						<form action="$(link-redirect)" method="get" id="form3" name="form3" target="_blank">
+							<div class="radioContainer"><input type="radio" id="form3radio1" name="form3" value="otimo"> Ótimo</div>
+							<div class="radioContainer"><input type="radio" id="form3radio2" name="form3" value="medio"> Médio</div>
+							<div class="radioContainer"><input type="radio" id="form3radio3" name="form3" value="ruim"> Ruim</div>
+							<input type="submit" target="hotspot_advert" class="hidden"><br><br>
+							<div onClick="openAdvert('3')" target="hotspot_advert" id="btn3" class="btn btn-primary disabled" style="text-align: center	">Continuar Navegando</div>
+						</form>
+					</div>
+
+
+				<div id="container4" style="display:none;">
+					<p style="font-size: 14px"><strong>Como você vê a disponibilidade dos produtos?</strong></p>
+					<form action="$(link-redirect)" method="get" id="form3" name="form3" target="_blank">
+						<div class="radioContainer"><input type="radio" id="form3radio1" name="form3" value="otimo"> Ótimo</div>
+						<div class="radioContainer"><input type="radio" id="form3radio2" name="form3" value="medio"> Médio</div>
+						<div class="radioContainer"><input type="radio" id="form3radio3" name="form3" value="ruim"> Ruim</div>
+						<input type="submit" target="hotspot_advert" class="hidden"><br><br>
+						<div onClick="openAdvert('3')" target="hotspot_advert" id="btn3" class="btn btn-primary disabled" style="text-align: center	">Continuar Navegando</div>
+					</form>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+		<script language="JavaScript">
+
+			//http://10.5.50.1/advert?dst=http%3A%2F%2Fg1.globo.com%2Fpolitica%2Foperacao-lava-jato%2Fnoticia%2Ffachin-vota-para-tornar-collor-reu-na-lava-jato-por-corrupcao-lavagem-de-dinheiro-e-organizacao-criminosa-na-lava-jato.ghtml
+			<!--
+			var popup = '';
+			function openOrig(link) {
+				// if (window.focus) popup.focus();
+				//location.href = unescape('$(link-orig-esc)');
+				alert("link->"+link);
+				location.href = link;
+			}
+			function openAd() {
+
+               	var redirect = '' + "<%= REDIRECT %>";
+
+				if(redirect == ''){
+                    redirect = 'http://www.google.com.br';
+				}
+
+                alert("redirect->"+redirect);
+                location.href = redirect;
+
+			}
+			function openAdvert(n) {
+				if(!hasClass(document.getElementById("btn"+n), 'disabled')){
+					if (window.name != 'hotspot_advert') {
+						// popup = open('$(link-redirect)', 'hotspot_advert', '');
+						//document.getElementById("form"+n).submit();
+						var radios = document.getElementsByName('form'+n);
+						for (var i = 0, length = radios.length; i < length; i++) {
+							if (radios[i].checked) {
+								var link = createLink('$(link-orig-esc)', n, radios[i].value)
+								popup = open('$(link-redirect)', 'hotspot_advert', '');
+								setTimeout(function(){
+									openOrig(link)
+								}, 1000);
+							break;
+							}
+						}
+						return;
+					}
+					setTimeout("openAd()", 1000);
+				}
+			}
+
+			function hasClass(element, cls) {
+				return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+			}
+
+			function activateBtn1(){
+				document.getElementById("btn1").classList.remove("disabled");
+			}
+			function activateBtn2(){
+				document.getElementById("btn2").classList.remove("disabled");
+			}
+			function activateBtn3(){
+				document.getElementById("btn3").classList.remove("disabled");
+			}
+
+			function show (elements) {
+				elements = elements.length ? elements : [elements];
+				for (var index = 0; index < elements.length; index++) {
+					elements[index].style.display = 'block';
+				}
+			}
+
+			function createLink(redirect, n, radio){
+				var replacedRedirect = redirect.replace(/(%2F)/gi, '_B-');
+				return 'http://192.168.3.25:8080/pesquisa/'+n+'/'+radio+'/'+replacedRedirect;
+
+			}
+
+			var random = Math.floor((Math.random() * 3) + 1);
+			show(document.getElementById("container"+random))
+
+
+			document.getElementById("form1radio1").addEventListener("click", activateBtn1);
+			document.getElementById("form1radio2").addEventListener("click", activateBtn1);
+			document.getElementById("form1radio3").addEventListener("click", activateBtn1);
+
+			document.getElementById("form2radio1").addEventListener("click", activateBtn2);
+			document.getElementById("form2radio2").addEventListener("click", activateBtn2);
+			document.getElementById("form2radio3").addEventListener("click", activateBtn2);
+
+			document.getElementById("form3radio1").addEventListener("click", activateBtn3);
+			document.getElementById("form3radio2").addEventListener("click", activateBtn3);
+			document.getElementById("form3radio3").addEventListener("click", activateBtn3);
+
+			//-->
+		</script>
+	</body>
+</html>
