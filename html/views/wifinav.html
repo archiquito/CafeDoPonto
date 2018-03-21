@@ -1,58 +1,75 @@
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="<%= ROUTERPATH %>/normalize.css">
-		<link rel="stylesheet" href="<%= ROUTERPATH %>/bootstrap.min.css">
-		<link rel="stylesheet" href="<%= ROUTERPATH %>/wifi.css">
-		<link rel="stylesheet" href="<%= ROUTERPATH %>/font-awesome.min.css">	
-		<link rel="stylesheet" href="<%= ROUTERPATH %>/montserrat.css">
-		<link rel="stylesheet" href="<%= ROUTERPATH %>/material-font.css">
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/montserrat.css">
+    <link rel="stylesheet" href="../css/material-font.css">
+    <link rel="stylesheet" href="../css/wifi.css">
+</head>
+
+<body class="wifilogin" onload="document.form1111.submit()">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 col-xs-12">
+
+                <div class="headerwifi">
+                    <div style="text-align: center; width: 100%;">
+                        <img class="logoTriibo" src="../images/logo_cafe_ponto.jpg" width="160" />
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 text-center" style="padding:0"><br><br><br><br><br>
+                    <p style="font-size: 18px">Você está <span style="font-weight: 500"> conectado!</span></p>
+
+
+                    <p><img src="../images/ft_finish.jpg" class="img-responsive"></p>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="powered">powered by <img src="../images/mini_logo_triibo.png"></div>
+    </div>
+
+
+
+
+    <form action="<%= link %>" method="POST" id="wifi-triibo" name="form1">
+        <input type="hidden" name="username" value="<%= user %>">
+        <input type="hidden" name="password" value="<%= password %>">
+        <input type="hidden" name="dst" value="http://www.triibo.com.br">
+        <input type="hidden" name="popup" value="false">
+
+    </form>
+
+    <!--<form action="<%= link %>" method="POST" id="wifi-triibo-ios">
+		<input type="hidden" name="username" value="<%//= user %>">
+		<input type="hidden" name="password" value="<%//= password %>">
+		<input type="hidden" name="dst" value="http://itunes.apple.com/us/app/triibo/id1118996431?l=pt&ls=1&mt=8">
+		<input type="hidden" name="popup" value="false">
 		
-	</head>
-	<body >
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 col-xs-12 text-center">
-		
-					<div class="headerwifi">
-						<div style="text-align: center; width: 100%;">
-							<img class="iconWifi" src="<%= ROUTERPATH %>/icon-wifi-ipiranga.png"  />
-						</div>
-					</div>
-					<div class="clearfix"><p><br><br><br></p></div>
-						<div class="col-md-12" style="spaceing text-center"><%= msg1 %></div>
+	</form>
 
-						
-						<hr>
+	<form action="http://play.google.com/store/apps/details?id=br.com.sysmobil.triiboclient&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" method="POST" id="wifi-triibo-android">
+		<input type="hidden" name="username" value="<%//= user %>">
+		<input type="hidden" name="password" value="<%//= password %>">
+		<input type="hidden" name="dst" value="<%//= dst %>">
+		<input type="hidden" name="link" value="<%//	= link %>">
+	</form>-->
 
-							<!--<p class="spaceing"><%= msg2 %></p>-->
+    <script type="text/javascript" src="<%= ROUTERPATH %>/jquerym.min.js"></script>
+    <script type="text/javascript" src="<%= ROUTERPATH %>/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="<%= ROUTERPATH %>/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<%= ROUTERPATH %>/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="<%= ROUTERPATH %>/wifinav.js"></script>
+</body>
 
-
-
-						<div class="spaceing more">
-							<a href="#" onclick="document.getElementById('wifi-triibo').submit();" class="btn btn-default spaceing" style="text-align: center">Clique aqui para liberar a internet!
-							</a>
-						</div>
-						<div class="spaceblock"></div>
-					
-				</div>
-			</div>
-		</div>
-
-
-		<form action="<%= link %>" method="POST" id="wifi-triibo">
-			<input type="hidden" name="username" value="<%= user %>">
-			<input type="hidden" name="password" value="<%= password %>">
-			<input type="hidden" name="dst" value="<%= dst %>">
-			<input type="hidden" name="popup" value="false">
-			<!-- <input type="submit" class="orangebtn" value="Navegar Agora!"> -->
-		</form>
-
-
-		<script type="text/javascript" src="<%= ROUTERPATH %>/jquerym.min.js"></script>
-		<script type="text/javascript" src="<%= ROUTERPATH %>/jquery.mobile.min.js"></script>
-		<script type="text/javascript" src="<%= ROUTERPATH %>/wifinav.js"></script>
-
-
-	</body>
-</html>
+</htm

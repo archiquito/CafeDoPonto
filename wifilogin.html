@@ -140,17 +140,17 @@
 
 
                     <% if(os == 'ios-captive' || os == 'ios'){ %>
-                        <a class="btn btn-link" href="https://itunes.apple.com/us/app/triibo/id1118996431?l=pt&ls=1&mt=8" style="color: #fff; text-align: center;  width: 45%; float: right"><i class="material-icons" style="font-size: 16px;">phone_iphone</i> Baixe o App</a>
+                        <a class="btn btn-link btn-block" href="https://itunes.apple.com/us/app/triibo/id1118996431?l=pt&ls=1&mt=8" style="color: #fff; text-align: center;"><i class="material-icons" style="font-size: 16px;">phone_iphone</i> Baixe o App</a>
                         <% }else{ %>
                             <a class="btn btn-link" href="https://play.google.com/store/apps/details?id=br.com.sysmobil.triiboclient&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
                                 style="color: #fff; text-align: center; width: 45%; float: right"><i class="material-icons" style="font-size: 16px;">phone_android</i> Baixe o App</a>
                             <% } %>
 
 
-
-                                <a class="btn btn-link" href="termos_de_uso.html" style="color: #fff; text-align: center; width: 45%; float: left"><i class="material-icons" style="font-size: 16px;">description</i> Termos de Uso</a>
-
-                                <div class="spaceblock"></div>
+                                <% if(os != 'ios-captive'){ %>
+                                    <a class="btn btn-link" href="https://app.triibo.com.br/#/termosdeuso" style="color: #fff; text-align: center; width: 45%; float: left"><i class="material-icons" style="font-size: 16px;">description</i> Termos de Uso</a>
+                                    <% } %>
+                                        <div class="spaceblock"></div>
 
                 </div>
 

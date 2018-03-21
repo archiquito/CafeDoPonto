@@ -1,59 +1,86 @@
-<html>
-<head>
- 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="bootstrap.min.css">
-	<link rel="stylesheet" href="wifi.css">
-	<link rel="stylesheet" href="montserrat-font.css">
+<!DOCTYPE html>
+<html lang="pt-br">
 
-	<title>Bem Vindo ao Ultra - Wi-Fi</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="wifi.css">
+    <link rel="stylesheet" href="montserrat.css">
+
+    <title>Bem Vindo ao Café do Ponto - Wi-Fi</title>
 
 </head>
+
 <body>
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12">
-		$(if chap-id)
-		<noscript>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- $(if chap-id) -->
+                <noscript>
 		<center><b>JavaScript precisa estar habilitado. Habilite o JavaScript para continuar.</b></center>
 		</noscript>
-		$(endif)
-		<center style="padding:10px">
-			<div class="headerwifi">
-				<div style="text-align: center; width: 100%;">
-					<p><img class="iconWifi" src="icon-wifi-ipiranga.png" /><br></p>
-				</div>
-			</div>
-		
-	<p><br><br></p>			
-			<p><span style="color:#2977B5"><strong>Aguarde...</strong><br>Você está sendo direcionado para o login.</span></p><br><br>
-			<svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-			   <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-			</svg>		
+                <!-- $(endif) -->
+                <center style="padding:10px">
+                    <div class="headerwifi">
+                        <div style="text-align: center; width: 100%;">
+                            <p><img class="iconWifi" src="logo_cafe_ponto.jpg" /><br></p>
+                        </div>
+                    </div>
 
-				<br><br>
-				<form name="redirect" action="http://triibowifi.triibo.com.br:8080/login/$(identity)" method="post">
-				<input type="hidden" name="mac" value="$(mac)">
-				<input type="hidden" name="ip" value="$(ip)">
-				<input type="hidden" name="username" value="$(username)">
-				<input type="hidden" name="link-login" value="$(link-login)">
-				<input type="hidden" name="link-orig" value="$(link-orig)">
-				<input type="hidden" name="error" value="$(error)">
-				<input type="hidden" name="chap-id" value="$(chap-id)">
-				<input type="hidden" name="chap-challenge" value="$(chap-challenge)">
-				<input type="hidden" name="link-login-only" value="$(link-login-only)">
-				<input type="hidden" name="link-orig-esc" value="$(link-orig-esc)">
-				<input type="hidden" name="mac-esc" value="$(mac-esc)">
-				<input type="submit" value="continue" class="btn btn-default" style="text-align: center">
-				</form>
-				<script language="JavaScript">				
-				  document.redirect.submit();
-				  //window.location.href = "http://triibowifi.triibo.com.br/login/$(server-name)";
-				  //window.location.href = "http://192.168.88.254/";				
-			</script></center>
-		</div>
-	</div>
-</div>
+                    <p><br><br><br></p>
+                    <p><span style="font-size:16px; font-weight:500;">Aguarde...</span><br>Você está sendo direcionado para o login.</p><br><br>
+                    <div class="container-coffee">
+                        <div class="mug-coffee">
+                            <div class="smoke-container">
+                                <svg width="80px" height="63px" viewbox="0 0 31 73">
+																	<g stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
+																		<g class="smokes" transform="translate(.500000, .500000)" stroke="#5d5d5d" stroke-width="7">
+																			<g class="smoke-1">
+																				<path id="Shape1" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+																			</g>
+																			<g class="smoke-2">
+																				<path id="Shape2" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+																			</g>
+																			<g class="smoke-3">
+																				<path id="Shape3" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+																			</g>
+																		</g>
+																	</g>
+																</svg>
+                            </div>
+                            <div class="mug"></div>
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <form name="redirect" action="http://triibowifi.triibo.com.br:8080/login/$(identity)" method="post">
+                        <input type="hidden" name="mac" value="$(mac)">
+                        <input type="hidden" name="ip" value="$(ip)">
+                        <input type="hidden" name="username" value="$(username)">
+                        <input type="hidden" name="link-login" value="$(link-login)">
+                        <input type="hidden" name="link-orig" value="$(link-orig)">
+                        <input type="hidden" name="error" value="$(error)">
+                        <input type="hidden" name="chap-id" value="$(chap-id)">
+                        <input type="hidden" name="chap-challenge" value="$(chap-challenge)">
+                        <input type="hidden" name="link-login-only" value="$(link-login-only)">
+                        <input type="hidden" name="link-orig-esc" value="$(link-orig-esc)">
+                        <input type="hidden" name="mac-esc" value="$(mac-esc)">
+                        <input type="submit" value="continue" class="btn btn-default btn-sm" style="text-align: center">
+                    </form>
+                    <script language="JavaScript">
+                        //   document.redirect.submit();
+                        //window.location.href = "http://triibowifi.triibo.com.br/login/$(server-name)";
+                        //window.location.href = "http://192.168.88.254/";
+                    </script>
+                </center>
+            </div>
+        </div>
+        <div class="powered">powered by <img src="mini_logo_triibo.png"></div>
+    </div>
 </body>
+
 </html>
