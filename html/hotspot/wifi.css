@@ -1,322 +1,322 @@
      body {
-     font-family: 'Montserrat', sans-serif;
-     font-size: 14px;
-     color: #fff;
-     height: 100%;
-     padding-bottom: 10px;
-     background: #231f20;
-     margin: 0;
-     padding: 0;
- }
- 
- a {
-     cursor: pointer;
-     text-decoration: none;
- }
- 
- a {
-     cursor: pointer;
-     text-decoration: none;
- }
- 
- a:link {
-     text-decoration: none;
- }
- 
- a:visited {
-     text-decoration: none;
- }
- 
- a:hover span,
- a:hover {
-     text-decoration: none;
- }
- 
- .headerwifi {
-     margin-top: 20px;
-     height: 60px;
-     width: 100%;
-     background-color: transparent;
-     background-size: cover;
-     text-align: center;
-     z-index: 2000;
-     margin-bottom: 5px;
- }
- 
- .headerwifi span {
-     color: card;
-     font-size: 25px;
-     line-height: 60px;
- }
- 
- .headerwifi .logotop {
-     /*margin-right: 10px;*/
-     margin: auto;
-     margin-top: 5px;
-     width: 158px;
- }
- 
- .headerwifi .iconWifi {
-     height: auto;
-     width: 150px;
-     margin-bottom: 10px
- }
- 
- .round-img {
-     background-color: #e6e6e6;
-     border-radius: 50%;
-     height: 160px;
-     margin: 70px auto 0;
-     text-align: center;
-     width: 160px;
- }
- 
- .round-img img {
-     padding-top: 27px;
-     width: 100px;
- }
- 
- .cardLogin {
-     background-color: transparent;
-     height: auto;
-     margin: 20px auto;
-     padding: 0;
-     width: 100%;
- }
- 
- .spaceing {
-     margin-top: 10px;
-     margin-bottom: 10px;
-     display: block;
- }
- 
- .spaceing.more {
-     margin-top: 20px;
-     margin-bottom: 20px;
-     display: block;
- }
- 
- .labelBranco {
-     color: #FFF;
-     font-size: 18px;
-     font-weight: 300;
- }
- 
- .labelBranco .small {
-     font-size: 16px;
- }
- 
- .tracobranco {
-     background-color: #FFF;
-     width: 100%;
-     height: 2px;
- }
- 
- .tinylink {
-     color: #FFF;
-     width: 100%;
-     text-align: center;
-     margin-top: 40px;
-     font-weight: 300;
- }
- 
- .inputWifi {
-     -moz-border-bottom-colors: none;
-     -moz-border-left-colors: none;
-     -moz-border-right-colors: none;
-     -moz-border-top-colors: none;
-     background-color: transparent;
-     border-color: currentcolor currentcolor #2977B5;
-     border-image: none;
-     border-style: none none solid;
-     border-width: 0 0 1px;
-     color: #2977B5;
-     font-size: 14px;
-     height: 44px;
-     margin-bottom: 1px;
-     margin-top: 2px;
-     padding: 8px 30px 8px 8px;
-     /*text-transform: uppercase;*/
-     width: 100%;
-     border-radius: 0;
- }
- 
- .inputPass {
-     width: 100%;
-     -moz-border-bottom-colors: none;
-     -moz-border-left-colors: none;
-     -moz-border-right-colors: none;
-     -moz-border-top-colors: none;
-     background-color: transparent;
-     border-color: currentcolor currentcolor #2977B5;
-     border-image: none;
-     border-style: none none solid;
-     border-width: 0 0 1px;
-     color: #2977B5;
-     font-size: 14px;
-     height: 44px;
-     margin-bottom: 1px;
-     margin-top: 2px;
-     padding: 8px 30px 8px 8px;
-     float: left;
-     border-radius: 0;
- }
- 
- .showon {
-     display: inherit;
- }
- 
- .showoff {
-     display: none;
- }
- 
- actionarea {
-     display: block;
-     width: 30px;
-     height: 30px;
-     cursor: pointer;
-     z-index: 8000;
-     position: relative;
-     left: 265px;
-     top: -35px;
- }
- 
- .downloadStore span {
-     width: 100%;
-     color: #2977B5;
-     text-align: center;
-     display: block;
-     font-size: 16px
- }
- 
- .downloadStore a img {
-     width: 135px;
-     height: 42px;
- }
- 
- .downloadStore div.blockstore {
-     float: left;
-     display: block;
-     text-align: center;
- }
- 
- div.spaceblock {
-     height: 20px;
-     display: block;
- }
- 
- div.clear {
-     clear: both;
- }
- 
- .centerlabel {
-     width: 100%;
-     text-align: center;
- }
- 
- .notificationbox .blackblock {
-     position: absolute;
-     top: 0;
-     left: 0;
-     z-index: 3000;
-     width: 100%;
-     height: 100%;
-     background-color: #000000;
-     opacity: 0.5;
- }
- 
- .notificationbox .aguarde {
-     position: absolute;
-     top: 0;
-     left: 0;
-     z-index: 3100;
-     width: 100%;
-     margin-top: 0;
-     height: 100%;
-     opacity: 1;
-     background: #F5CA01;
-     text-align: center;
- }
- 
- .notificationbox .aguarde span {
-     margin-top: 35px;
-     font-size: 20px;
-     color: #2977B5;
-     display: block;
- }
- 
- .notificationbox .aguarde .iconWifi {
-     display: inline-block;
-     height: 120px;
-     width: 121px;
-     margin-top: 20%;
-     text-align: center;
- }
- 
- .notificationbox .error,
- .notificationbox .cadastrar {
-     position: absolute;
-     top: 0;
-     left: 0;
-     z-index: 3050;
-     width: 100%;
-     height: 100%;
-     min-height: 560px;
-     margin-top: 0px;
-     margin-left: 0px;
-     /*height: 200px;
+         font-family: 'Montserrat', sans-serif;
+         font-size: 14px;
+         color: #fff;
+         height: 100%;
+         padding-bottom: 10px;
+         background: #231f20;
+         margin: 0;
+         padding: 0;
+     }
+     
+     a {
+         cursor: pointer;
+         text-decoration: none;
+     }
+     
+     a {
+         cursor: pointer;
+         text-decoration: none;
+     }
+     
+     a:link {
+         text-decoration: none;
+     }
+     
+     a:visited {
+         text-decoration: none;
+     }
+     
+     a:hover span,
+     a:hover {
+         text-decoration: none;
+     }
+     
+     .headerwifi {
+         margin-top: 20px;
+         height: 60px;
+         width: 100%;
+         background-color: transparent;
+         background-size: cover;
+         text-align: center;
+         z-index: 2000;
+         margin-bottom: 5px;
+     }
+     
+     .headerwifi span {
+         color: card;
+         font-size: 25px;
+         line-height: 60px;
+     }
+     
+     .headerwifi .logotop {
+         /*margin-right: 10px;*/
+         margin: auto;
+         margin-top: 5px;
+         width: 158px;
+     }
+     
+     .headerwifi .iconWifi {
+         height: auto;
+         width: 150px;
+         margin-bottom: 10px
+     }
+     
+     .round-img {
+         background-color: #e6e6e6;
+         border-radius: 50%;
+         height: 160px;
+         margin: 70px auto 0;
+         text-align: center;
+         width: 160px;
+     }
+     
+     .round-img img {
+         padding-top: 27px;
+         width: 100px;
+     }
+     
+     .cardLogin {
+         background-color: transparent;
+         height: auto;
+         margin: 20px auto;
+         padding: 0;
+         width: 100%;
+     }
+     
+     .spaceing {
+         margin-top: 10px;
+         margin-bottom: 10px;
+         display: block;
+     }
+     
+     .spaceing.more {
+         margin-top: 20px;
+         margin-bottom: 20px;
+         display: block;
+     }
+     
+     .labelBranco {
+         color: #FFF;
+         font-size: 18px;
+         font-weight: 300;
+     }
+     
+     .labelBranco .small {
+         font-size: 16px;
+     }
+     
+     .tracobranco {
+         background-color: #FFF;
+         width: 100%;
+         height: 2px;
+     }
+     
+     .tinylink {
+         color: #FFF;
+         width: 100%;
+         text-align: center;
+         margin-top: 40px;
+         font-weight: 300;
+     }
+     
+     .inputWifi {
+         -moz-border-bottom-colors: none;
+         -moz-border-left-colors: none;
+         -moz-border-right-colors: none;
+         -moz-border-top-colors: none;
+         background-color: transparent;
+         border-color: currentcolor currentcolor #2977B5;
+         border-image: none;
+         border-style: none none solid;
+         border-width: 0 0 1px;
+         color: #2977B5;
+         font-size: 14px;
+         height: 44px;
+         margin-bottom: 1px;
+         margin-top: 2px;
+         padding: 8px 30px 8px 8px;
+         /*text-transform: uppercase;*/
+         width: 100%;
+         border-radius: 0;
+     }
+     
+     .inputPass {
+         width: 100%;
+         -moz-border-bottom-colors: none;
+         -moz-border-left-colors: none;
+         -moz-border-right-colors: none;
+         -moz-border-top-colors: none;
+         background-color: transparent;
+         border-color: currentcolor currentcolor #2977B5;
+         border-image: none;
+         border-style: none none solid;
+         border-width: 0 0 1px;
+         color: #2977B5;
+         font-size: 14px;
+         height: 44px;
+         margin-bottom: 1px;
+         margin-top: 2px;
+         padding: 8px 30px 8px 8px;
+         float: left;
+         border-radius: 0;
+     }
+     
+     .showon {
+         display: inherit;
+     }
+     
+     .showoff {
+         display: none;
+     }
+     
+     actionarea {
+         display: block;
+         width: 30px;
+         height: 30px;
+         cursor: pointer;
+         z-index: 8000;
+         position: relative;
+         left: 265px;
+         top: -35px;
+     }
+     
+     .downloadStore span {
+         width: 100%;
+         color: #2977B5;
+         text-align: center;
+         display: block;
+         font-size: 16px
+     }
+     
+     .downloadStore a img {
+         width: 135px;
+         height: 42px;
+     }
+     
+     .downloadStore div.blockstore {
+         float: left;
+         display: block;
+         text-align: center;
+     }
+     
+     div.spaceblock {
+         height: 20px;
+         display: block;
+     }
+     
+     div.clear {
+         clear: both;
+     }
+     
+     .centerlabel {
+         width: 100%;
+         text-align: center;
+     }
+     
+     .notificationbox .blackblock {
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 3000;
+         width: 100%;
+         height: 100%;
+         background-color: #000000;
+         opacity: 0.5;
+     }
+     
+     .notificationbox .aguarde {
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 3100;
+         width: 100%;
+         margin-top: 0;
+         height: 100%;
+         opacity: 1;
+         background: #F5CA01;
+         text-align: center;
+     }
+     
+     .notificationbox .aguarde span {
+         margin-top: 35px;
+         font-size: 20px;
+         color: #2977B5;
+         display: block;
+     }
+     
+     .notificationbox .aguarde .iconWifi {
+         display: inline-block;
+         height: 120px;
+         width: 121px;
+         margin-top: 20%;
+         text-align: center;
+     }
+     
+     .notificationbox .error,
+     .notificationbox .cadastrar {
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 3050;
+         width: 100%;
+         height: 100%;
+         min-height: 560px;
+         margin-top: 0px;
+         margin-left: 0px;
+         /*height: 200px;
             width: 400px;*/
-     opacity: 1;
-     background: #F5CA01;
-     text-align: center;
-     color: #2977B5;
-     border-radius: 0px;
-     padding-bottom: 10px;
- }
- 
- .notificationbox .cadastrar {
-     /*margin-top: -130px;
+         opacity: 1;
+         background: #F5CA01;
+         text-align: center;
+         color: #2977B5;
+         border-radius: 0px;
+         padding-bottom: 10px;
+     }
+     
+     .notificationbox .cadastrar {
+         /*margin-top: -130px;
             height: 310px;*/
-     display: none;
-     z-index: 3200;
-     min-height: 670px;
- }
- 
- .notificationbox .error span,
- .notificationbox .cadastrar span {
-     margin-top: 15px;
-     font-size: 15px;
-     display: block;
- }
- 
- .notificationbox .cadastrar span {
-     text-align: left;
-     margin-right: 30px;
-     margin-left: 30px;
- }
- 
- .notificationbox .error span upper,
- .notificationbox .cadastrar span upper {
-     font-size: 32px;
- }
- 
- .notificationbox .error span.title {
-     color: #2977B5;
- }
- 
- .notificationbox .cadastrar h2.title {
-     display: inline-block;
-     width: 80%;
-     font-size: 17px;
- }
- 
- .notificationbox .error span.errormsg,
- .notificationbox .cadastrar span.errormsg {
-     padding-left: 30px;
-     padding-right: 30px;
-     color: #2977B5;
- }
- /*
+         display: none;
+         z-index: 3200;
+         min-height: 670px;
+     }
+     
+     .notificationbox .error span,
+     .notificationbox .cadastrar span {
+         margin-top: 15px;
+         font-size: 15px;
+         display: block;
+     }
+     
+     .notificationbox .cadastrar span {
+         text-align: left;
+         margin-right: 30px;
+         margin-left: 30px;
+     }
+     
+     .notificationbox .error span upper,
+     .notificationbox .cadastrar span upper {
+         font-size: 32px;
+     }
+     
+     .notificationbox .error span.title {
+         color: #2977B5;
+     }
+     
+     .notificationbox .cadastrar h2.title {
+         display: inline-block;
+         width: 80%;
+         font-size: 17px;
+     }
+     
+     .notificationbox .error span.errormsg,
+     .notificationbox .cadastrar span.errormsg {
+         padding-left: 30px;
+         padding-right: 30px;
+         color: #2977B5;
+     }
+     /*
         .notificationbox .error a{
         margin-top: 40px;
         font-size: 24px;
@@ -347,360 +347,362 @@
 
         }
         */
- 
- .checkbox {
-     color: #2977B5;
-     font-size: 15px;
-     line-height: 25px;
-     margin: 20px auto 0;
-     text-align: center;
-     width: 80%;
- }
- 
- .checkbox input {
-     width: 15px;
-     height: 15px;
- }
- 
- .bbutton {
-     height: 20px;
- }
- 
- html,
- body.slides {
-     overflow-x: hidden;
- }
- 
- #sliderCards {
-     margin: 0 auto;
-     padding: 0;
-     text-align: center;
-     width: 2500px;
-     position: relative;
- }
- 
- #sliderCards>li {
-     background-color: #FFF;
-     color: #888;
-     margin: 0 10px;
-     overflow: hidden;
-     float: left;
-     list-style: outside none none;
-     box-sizing: border-box;
-     border-radius: 5px;
-     box-shadow: 1px 1px 5px #333;
-     position: relative;
-     padding-bottom: 50px !important;
-     height: auto;
-     font-size: 16px;
-     font-weight: 600;
- }
- 
- #sliderCards>li>div>img.imgBola {
-     width: 72px;
-     text-align: center;
- }
- 
- ul.bolinhas {
-     display: inline-block;
-     padding: 0;
-     bottom: 10px;
-     position: absolute;
-     left: 0;
- }
- 
- ul.bolinhas>li {
-     background-color: #AAA;
-     float: left;
-     height: 15px;
-     list-style: outside none none;
-     margin: 5px;
-     width: 15px;
-     border-radius: 50%;
- }
- 
- ul.bolinhas>li.selected {
-     background-color: #FF0000;
- }
- 
- .downloadApps {
-     text-align: center;
- }
- 
- .downloadApps img {
-     width: auto;
- }
- 
- .downloadApps .bRedonda {
-     border-radius: 15px;
- }
- 
- .downloadApps a {
-     color: #AAA;
- }
- 
- .downloadApps h3 {
-     height: 50px;
- }
- 
- .ui-loader {
-     display: none;
- }
- /*MIXING*/
- 
- .powered {
-     position: absolute;
-     bottom: 5px;
-     right: 5px;
-     width: auto;
-     vertical-align: middle;
-     font-size: 11px;
-     font-weight: 400;
-     opacity: .8;
- }
- 
- .powered img {
-     width: 38px;
- }
- 
- .btn {
-     width: 100%;
-     display: inline-block;
-     padding: 8px 12px;
-     margin-bottom: 0;
-     font-size: 16px;
-     font-weight: normal;
-     line-height: 1.42857143;
-     text-align: left;
-     white-space: nowrap;
-     vertical-align: middle;
-     -ms-touch-action: manipulation;
-     touch-action: manipulation;
-     cursor: pointer;
-     -webkit-user-select: none;
-     -moz-user-select: none;
-     -ms-user-select: none;
-     user-select: none;
-     background-image: none;
-     border: 1px solid transparent;
-     border-radius: 25px;
- }
- 
- .btn-default {
-     color: #333;
-     background-color: #fff;
-     border-color: #ccc;
- }
- 
- .btn-sm {
-     width: 60%;
-     padding: 6px;
-     background-color: #F0F0F0
- }
- 
- .btn-primary {
-     color: #fff;
-     background-color: #9B8548;
-     border-color: #9B8548;
- }
- 
- .btn-vermelho {
-     color: #fff;
-     background-color: #EC0000;
-     border-color: #BB0000;
- }
- 
- .btn span {
-     margin-right: 20px
- }
- 
- .inputWifi::-moz-placeholder,
- .inputPass::-moz-placeholder {
-     color: #2977B5;
-     opacity: 1;
- }
- 
- .inputWifi:-ms-input-placeholder,
- .inputPass::-moz-placeholder {
-     color: #2977B5;
- }
- 
- .inputWifi::-webkit-input-placeholder,
- .inputPass::-moz-placeholder {
-     color: #2977B5;
- }
- 
- .btn-circle {
-     width: 30px;
-     height: 30px;
-     text-align: center;
-     padding: 6px 0;
-     font-size: 12px;
-     line-height: 1.428571429;
-     border-radius: 15px;
- }
- 
- .btn-circle.btn-lg {
-     width: 50px;
-     height: 50px;
-     padding: 10px 12px;
-     font-size: 18px;
-     line-height: 1.33;
-     border-radius: 25px;
-     -webkit-box-shadow: 0 0 6px 0 #fff;
-     box-shadow: 0 0 6px 0 #fff;
- }
- 
- .btn-circle.btn-xl {
-     width: 60px;
-     height: 60px;
-     padding: 10px 13px;
-     font-size: 24px;
-     line-height: 1.33;
-     border-radius: 35px;
- }
- /* SPINNER*/
- 
- .spinner {
-     -webkit-animation: rotator 1.4s linear infinite;
-     animation: rotator 1.4s linear infinite;
- }
- 
- @-webkit-keyframes rotator {
-     0% {
-         -webkit-transform: rotate(0deg);
-         transform: rotate(0deg);
-     }
-     100% {
-         -webkit-transform: rotate(270deg);
-         transform: rotate(270deg);
-     }
- }
- 
- @keyframes rotator {
-     0% {
-         -webkit-transform: rotate(0deg);
-         transform: rotate(0deg);
-     }
-     100% {
-         -webkit-transform: rotate(270deg);
-         transform: rotate(270deg);
-     }
- }
- 
- .path {
-     stroke-dasharray: 187;
-     stroke-dashoffset: 0;
-     -webkit-transform-origin: center;
-     transform-origin: center;
-     -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
-     animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
- }
- 
- @-webkit-keyframes colors {
-     0% {
-         stroke: #2977B5;
-     }
-     25% {
-         stroke: #2977B5;
-     }
-     50% {
-         stroke: #2977B5;
-     }
-     75% {
-         stroke: #2977B5;
-     }
-     100% {
-         stroke: #2977B5;
-     }
- }
- 
- @keyframes colors {
-     0% {
-         stroke: #2977B5;
-     }
-     25% {
-         stroke: #2977B5;
-     }
-     50% {
-         stroke: #2977B5;
-     }
-     75% {
-         stroke: #2977B5;
-     }
-     100% {
-         stroke: #2977B5;
-     }
- }
- 
- @-webkit-keyframes dash {
-     0% {
-         stroke-dashoffset: 187;
-     }
-     50% {
-         stroke-dashoffset: 46.75;
-         -webkit-transform: rotate(135deg);
-         transform: rotate(135deg);
-     }
-     100% {
-         stroke-dashoffset: 187;
-         -webkit-transform: rotate(450deg);
-         transform: rotate(450deg);
-     }
- }
- 
- @keyframes dash {
-     0% {
-         stroke-dashoffset: 187;
-     }
-     50% {
-         stroke-dashoffset: 46.75;
-         -webkit-transform: rotate(135deg);
-         transform: rotate(135deg);
-     }
-     100% {
-         stroke-dashoffset: 187;
-         -webkit-transform: rotate(450deg);
-         transform: rotate(450deg);
-     }
- }
- 
- @media only screen and (min-device-width: 1px) and (max-device-width: 599px) and (orientation: portrait) {
-     body {
-         font-size: 13px;
-     }
-     .container-promocao {
-         width: 100%;
-     }
-     .panel-title,
-     .btn {
-         font-size: 13px;
-     }
-     .cardLogin {
-         background: none;
-     }
-     .downloadStore div.blockstore {
-         width: 100%;
-     }
-     .inputPass {
-         width: 78%;
-         -moz-border-bottom-colors: none;
-         -moz-border-left-colors: none;
-         -moz-border-right-colors: none;
-         -moz-border-top-colors: none;
-         background-color: transparent;
-         border-color: currentcolor currentcolor #2977B5;
-         border-image: none;
-         border-style: none none solid;
-         border-width: 0 0 1px;
+     
+     .checkbox {
          color: #2977B5;
-         font-size: 14px;
-         height: 44px;
-         margin-bottom: 1px;
-         margin-top: 2px;
-         padding: 8px 30px 8px 8px;
-         border-radius: 0;
+         font-size: 15px;
+         line-height: 25px;
+         margin: 20px auto 0;
+         text-align: center;
+         width: 80%;
      }
+     
+     .checkbox input {
+         width: 15px;
+         height: 15px;
+     }
+     
+     .bbutton {
+         height: 20px;
+     }
+     
+     html,
+     body.slides {
+         overflow-x: hidden;
+     }
+     
+     #sliderCards {
+         margin: 0 auto;
+         padding: 0;
+         text-align: center;
+         width: 2500px;
+         position: relative;
+     }
+     
+     #sliderCards>li {
+         background-color: #FFF;
+         color: #888;
+         margin: 0 10px;
+         overflow: hidden;
+         float: left;
+         list-style: outside none none;
+         box-sizing: border-box;
+         border-radius: 5px;
+         box-shadow: 1px 1px 5px #333;
+         position: relative;
+         padding-bottom: 50px !important;
+         height: auto;
+         font-size: 16px;
+         font-weight: 600;
+     }
+     
+     #sliderCards>li>div>img.imgBola {
+         width: 72px;
+         text-align: center;
+     }
+     
+     ul.bolinhas {
+         display: inline-block;
+         padding: 0;
+         bottom: 10px;
+         position: absolute;
+         left: 0;
+     }
+     
+     ul.bolinhas>li {
+         background-color: #AAA;
+         float: left;
+         height: 15px;
+         list-style: outside none none;
+         margin: 5px;
+         width: 15px;
+         border-radius: 50%;
+     }
+     
+     ul.bolinhas>li.selected {
+         background-color: #FF0000;
+     }
+     
+     .downloadApps {
+         text-align: center;
+     }
+     
+     .downloadApps img {
+         width: auto;
+     }
+     
+     .downloadApps .bRedonda {
+         border-radius: 15px;
+     }
+     
+     .downloadApps a {
+         color: #AAA;
+     }
+     
+     .downloadApps h3 {
+         height: 50px;
+     }
+     
+     .ui-loader {
+         display: none;
+     }
+     /*MIXING*/
+     
+     .powered {
+         position: absolute;
+         bottom: 5px;
+         right: 5px;
+         width: auto;
+         vertical-align: middle;
+         font-size: 11px;
+         font-weight: 400;
+         opacity: .8;
+     }
+     
+     .powered img {
+         width: 38px;
+     }
+     
+     .btn {
+         width: 100%;
+         display: inline-block;
+         padding: 8px 12px;
+         margin-bottom: 0;
+         font-size: 16px;
+         font-weight: normal;
+         line-height: 1.42857143;
+         text-align: left;
+         white-space: nowrap;
+         vertical-align: middle;
+         -ms-touch-action: manipulation;
+         touch-action: manipulation;
+         cursor: pointer;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         background-image: none;
+         border: 1px solid transparent;
+         border-radius: 25px;
+     }
+     
+     .btn-default {
+         color: #333;
+         background-color: #fff;
+         border-color: #ccc;
+     }
+     
+     .btn-sm {
+         width: 60%;
+         padding: 6px;
+         background-color: #F0F0F0
+     }
+     
+     .btn-primary {
+         color: #fff;
+         background-color: #9B8548;
+         border-color: #9B8548;
+     }
+     
+     .btn-vermelho {
+         color: #fff;
+         background-color: #EC0000;
+         border-color: #BB0000;
+     }
+     
+     .btn span {
+         margin-right: 20px
+     }
+     
+     .inputWifi::-moz-placeholder,
+     .inputPass::-moz-placeholder {
+         color: #2977B5;
+         opacity: 1;
+     }
+     
+     .inputWifi:-ms-input-placeholder,
+     .inputPass::-moz-placeholder {
+         color: #2977B5;
+     }
+     
+     .inputWifi::-webkit-input-placeholder,
+     .inputPass::-moz-placeholder {
+         color: #2977B5;
+     }
+     
+     .btn-circle {
+         width: 30px;
+         height: 30px;
+         text-align: center;
+         padding: 6px 0;
+         font-size: 12px;
+         line-height: 1.428571429;
+         border-radius: 15px;
+     }
+     
+     .btn-circle.btn-lg {
+         width: 50px;
+         height: 50px;
+         padding: 10px 12px;
+         font-size: 18px;
+         line-height: 1.33;
+         border-radius: 25px;
+         -webkit-box-shadow: 0 0 6px 0 #fff;
+         box-shadow: 0 0 6px 0 #fff;
+     }
+     
+     .btn-circle.btn-xl {
+         width: 60px;
+         height: 60px;
+         padding: 10px 13px;
+         font-size: 24px;
+         line-height: 1.33;
+         border-radius: 35px;
+     }
+     /* SPINNER*/
+     
+     .spinner {
+         -webkit-animation: rotator 1.4s linear infinite;
+         animation: rotator 1.4s linear infinite;
+     }
+     
+     @-webkit-keyframes rotator {
+         0% {
+             -webkit-transform: rotate(0deg);
+             transform: rotate(0deg);
+         }
+         100% {
+             -webkit-transform: rotate(270deg);
+             transform: rotate(270deg);
+         }
+     }
+     
+     @keyframes rotator {
+         0% {
+             -webkit-transform: rotate(0deg);
+             transform: rotate(0deg);
+         }
+         100% {
+             -webkit-transform: rotate(270deg);
+             transform: rotate(270deg);
+         }
+     }
+     
+     .path {
+         stroke-dasharray: 187;
+         stroke-dashoffset: 0;
+         -webkit-transform-origin: center;
+         transform-origin: center;
+         -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+         animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+     }
+     
+     @-webkit-keyframes colors {
+         0% {
+             stroke: #2977B5;
+         }
+         25% {
+             stroke: #2977B5;
+         }
+         50% {
+             stroke: #2977B5;
+         }
+         75% {
+             stroke: #2977B5;
+         }
+         100% {
+             stroke: #2977B5;
+         }
+     }
+     
+     @keyframes colors {
+         0% {
+             stroke: #2977B5;
+         }
+         25% {
+             stroke: #2977B5;
+         }
+         50% {
+             stroke: #2977B5;
+         }
+         75% {
+             stroke: #2977B5;
+         }
+         100% {
+             stroke: #2977B5;
+         }
+     }
+     
+     @-webkit-keyframes dash {
+         0% {
+             stroke-dashoffset: 187;
+         }
+         50% {
+             stroke-dashoffset: 46.75;
+             -webkit-transform: rotate(135deg);
+             transform: rotate(135deg);
+         }
+         100% {
+             stroke-dashoffset: 187;
+             -webkit-transform: rotate(450deg);
+             transform: rotate(450deg);
+         }
+     }
+     
+     @keyframes dash {
+         0% {
+             stroke-dashoffset: 187;
+         }
+         50% {
+             stroke-dashoffset: 46.75;
+             -webkit-transform: rotate(135deg);
+             transform: rotate(135deg);
+         }
+         100% {
+             stroke-dashoffset: 187;
+             -webkit-transform: rotate(450deg);
+             transform: rotate(450deg);
+         }
+     }
+     
+     @media only screen and (min-device-width: 1px) and (max-device-width: 599px) and (orientation: portrait) {
+         body {
+             font-size: 13px;
+         }
+         .container-promocao {
+             width: 100%;
+         }
+         .panel-title,
+         .btn {
+             font-size: 13px;
+         }
+         .cardLogin {
+             background: none;
+         }
+         .downloadStore div.blockstore {
+             width: 100%;
+         }
+         .inputPass {
+             width: 78%;
+             -moz-border-bottom-colors: none;
+             -moz-border-left-colors: none;
+             -moz-border-right-colors: none;
+             -moz-border-top-colors: none;
+             background-color: transparent;
+             border-color: currentcolor currentcolor #2977B5;
+             border-image: none;
+             border-style: none none solid;
+             border-width: 0 0 1px;
+             color: #2977B5;
+             font-size: 14px;
+             height: 44px;
+             margin-bottom: 1px;
+             margin-top: 2px;
+             padding: 8px 30px 8px 8px;
+             border-radius: 0;
+         }
+     }
+     
      @media only screen and (min-device-width: 480px) and (max-device-width: 899px) and (orientation: landscape) {
          .cardLogin {
              background: #E6E6E6;
@@ -725,6 +727,7 @@
              display: none;
          }
      }
+     
      @media only screen and (min-device-width: 600px) and (max-device-width: 899px) and (orientation: portrait) {
          .container-promocao {
              width: 100%;
@@ -743,6 +746,7 @@
              width: 50%;
          }
      }
+     
      @media only screen and (min-device-width: 900px) and (max-device-width: 1920px) {
          .cardLogin {
              background: #E6E6E6;
@@ -768,23 +772,26 @@
          }
      }
      /* COFFEE */
+     
      .container-coffee {
-         width: 150px;
-         height: 150px;
+         width: 100px;
+         height: 100px;
          margin: 0 auto;
-         background: #F0F0F0;
+         background: #231f20;
          border-radius: 50%;
          position: relative;
          z-index: 1;
          padding: 0px;
-         border: #97968F 4px solid;
+         /* border: #97968F 4px solid; */
      }
+     
      .mug-coffee {
          max-width: 60px;
          width: 100%;
          margin: 0 5px 0 0px;
-         padding-bottom: 30px;
+         padding-bottom: 0px;
      }
+     
      .smoke-container {
          display: flex;
          position: relative;
@@ -792,42 +799,49 @@
          margin: 0 auto;
          position: relative;
      }
+     
      .smoke-1 {
          animation: shift 3s linear 0.6s infinite;
          opacity: 0;
      }
+     
      .smoke-2 {
          animation: shift-2 2s linear 0.4s infinite;
          opacity: 0;
      }
+     
      .smoke-3 {
          animation: shift-3 4s linear 1s infinite;
          opacity: 0;
      }
+     
      .mug {
          width: 60px;
-         height: 55px;
-         border-radius: 2px 2px 15px 15px;
-         border: 10px solid #5d5d5d;
+         height: 45px;
+         border-radius: 2px 2px 25px 25px;
+         border: 6px solid #fff;
          background-color: #fe6155;
          position: relative;
          margin: 0 auto;
          box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.2);
      }
+     
      .mug:after {
          content: "";
          position: absolute;
          z-index: -1;
-         right: -30px;
-         top: 5%;
-         width: 50px;
-         height: 35px;
-         border: 10px solid #5d5d5d;
+         right: -25px;
+         top: 0;
+         width: 40px;
+         height: 25px;
+         border: 6px solid #fff;
          border-radius: 30px;
      }
+     
      .smokes {
          transform: translateX(20px);
      }
+     
      @-moz-keyframes shift {
          0% {
              transform: translate(10px, 155%);
@@ -841,6 +855,7 @@
              opacity: 0;
          }
      }
+     
      @-webkit-keyframes shift {
          0% {
              transform: translate(10px, 155%);
@@ -854,6 +869,7 @@
              opacity: 0;
          }
      }
+     
      @-o-keyframes shift {
          0% {
              transform: translate(10px, 155%);
@@ -867,6 +883,7 @@
              opacity: 0;
          }
      }
+     
      @keyframes shift {
          0% {
              transform: translate(10px, 155%);
@@ -880,6 +897,7 @@
              opacity: 0;
          }
      }
+     
      @-moz-keyframes shift-2 {
          0% {
              transform: translate(0, 155%);
@@ -893,6 +911,7 @@
              opacity: 0;
          }
      }
+     
      @-webkit-keyframes shift-2 {
          0% {
              transform: translate(0, 155%);
@@ -906,6 +925,7 @@
              opacity: 0;
          }
      }
+     
      @-o-keyframes shift-2 {
          0% {
              transform: translate(0, 155%);
@@ -919,6 +939,7 @@
              opacity: 0;
          }
      }
+     
      @keyframes shift-2 {
          0% {
              transform: translate(0, 155%);
@@ -932,6 +953,7 @@
              opacity: 0;
          }
      }
+     
      @-moz-keyframes shift-3 {
          0% {
              transform: translate(-10px, 155%);
@@ -945,6 +967,7 @@
              opacity: 0;
          }
      }
+     
      @-webkit-keyframes shift-3 {
          0% {
              transform: translate(-10px, 155%);
@@ -958,6 +981,7 @@
              opacity: 0;
          }
      }
+     
      @-o-keyframes shift-3 {
          0% {
              transform: translate(-10px, 155%);
@@ -971,6 +995,7 @@
              opacity: 0;
          }
      }
+     
      @keyframes shift-3 {
          0% {
              transform: translate(-10px, 155%);

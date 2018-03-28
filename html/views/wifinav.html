@@ -6,38 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/montserrat.css">
-    <link rel="stylesheet" href="../css/material-font.css">
     <link rel="stylesheet" href="../css/wifi.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            background: #000
+        }
+        
+        .bgimg-1 {
+            position: relative;
+            opacity: 0.85;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .bgimg-1 {
+            background-image: url("../images/bg_final.jpg");
+            min-height: 100%;
+        }
+        
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+        
+        .caption span.border {
+            background-color: transparent;
+            color: #fff;
+            padding: 18px;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
 
-<body class="wifilogin" onload="document.form1111.submit()">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4 col-xs-12">
-
-                <div class="headerwifi">
-                    <div style="text-align: center; width: 100%;">
-                        <img class="logoTriibo" src="../images/logo_cafe_ponto.jpg" width="160" />
-
-                    </div>
-                </div>
-
-                <div class="col-xs-12 text-center" style="padding:0"><br><br><br><br><br>
-                    <p style="font-size: 18px">Você está <span style="font-weight: 500"> conectado!</span></p>
+<body>
 
 
-                    <p><img src="../images/ft_finish.jpg" class="img-responsive"></p>
-
-
-                </div>
-
-            </div>
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">Você está conectado!</span>
         </div>
-        <div class="powered">powered by <img src="../images/mini_logo_triibo.png"></div>
     </div>
+
+
+    <div class="powered">powered by <img src="../images/mini_logo_triibo.png"></div>
+
 
 
 
@@ -65,11 +88,11 @@
 		<input type="hidden" name="link" value="<%//	= link %>">
 	</form>-->
 
-    <script type="text/javascript" src="<%= ROUTERPATH %>/jquerym.min.js"></script>
-    <script type="text/javascript" src="<%= ROUTERPATH %>/jquery.mobile.min.js"></script>
-    <script type="text/javascript" src="<%= ROUTERPATH %>/bootstrap.min.js"></script>
-    <script type="text/javascript" src="<%= ROUTERPATH %>/jquery.touchSwipe.min.js"></script>
-    <script type="text/javascript" src="<%= ROUTERPATH %>/wifinav.js"></script>
+    <script type="text/javascript" src="../frontedjs/jquerym.min.js"></script>
+    <script type="text/javascript" src="../frontedjs/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="../frontedjs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../frontedjs/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="../frontedjs/wifinav.js"></script>
 </body>
 
-</htm
+</html>

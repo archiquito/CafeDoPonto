@@ -5,70 +5,49 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.triibo.com.br/cafedoponto/css/normalize.css">
-    <link rel="stylesheet" href="https://www.triibo.com.br/cafedoponto/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.triibo.com.br/cafedoponto/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.triibo.com.br/cafedoponto/css/montserrat.css">
-    <link rel="stylesheet" href="https://www.triibo.com.br/cafedoponto/css/wifi.css">
-
-    <script>
-        function mostrarDataHora(dataHoje, hora) {
-
-            nHora = hora.split(":");
-            retorno = dataHoje;
-            retorno += " - " + nHora[0] + ":" + (nHora[1] < 10 ? "0" + nHora[1] : nHora[1]) + ":" + nHora[2];
-
-
-            document.getElementById("datahora").innerHTML = retorno;
-        }
-
-
-        function atualizarDataHora() {
-            dataAtual = new Date();
-            dia = dataAtual.getDate();
-            mes = dataAtual.getMonth();
-            ano = dataAtual.getFullYear();
-            hora = dataAtual.getHours();
-            minuto = dataAtual.getMinutes();
-            segundo = dataAtual.getSeconds();
-
-            dataHoje = dia + "/" + (mes < 10 ? "0" + (mes + 1) : (mes + 1)) + "/" + ano;
-            horaImprimivel = hora + ":" + minuto + ":" + segundo;
-            mostrarDataHora(dataHoje, horaImprimivel);
-            setTimeout("atualizarDataHora()", 1000);
-        }
-    </script>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/montserrat.css">
+    <link rel="stylesheet" href="../css/wifi.css">
 </head>
 
-<body onload="atualizarDataHora()">
+<body>
+    <div class="col-xs-12" style="background: #fff; padding: 0px; width:100%; height: auto; display: block; position:fixed; z-index:100000;">
+        <div style="background:#231F20; padding:4px 0; text-align:center">
+            <img src="../images/logo_cafe_ponto.jpg" width="100">
+        </div>
+        <div class="col-xs-12" style="margin:5px 0">
+            <a href="#" onclick="document.getElementById('wifi-triibo').submit();" id="btnPag" class="btn btn-primary" style="text-align: center; text-transform:uppercase; font-weight:400 ; font-size:12px">
+                <strong> Clique aqui para liberar a internet!</strong>
+            </a>
+        </div>
 
+    </div>
     <div class="clearfix"></div>
+    <p style="display:block; margin-top:120px;"></p>
     <div class="container-promocao">
-        <div style="width:100%; position: relative; z-index:1">
+
+        <div style="width:100%; position: relative; z-index:1; display:block">
             <div class="box">
-                <h3 class="text-center">Aproveite nossas ofertas e promoções!</h3>
-                <div class="clearfix"></div>
-
+                <h4 class="text-center;">Aproveite nossas ofertas e promoções!</h4>
             </div>
 
             <div class="box-ft">
-                <div style="position: absolute; width:100%; border-top:8px dotted #fff; z-index: 20; top: -4px"></div>
-                <div style="position:relative; z-index:-1"><img src="https://www.triibo.com.br/cafedoponto/images/ft_promocao1.jpg" class="img-responsive"></div>
+                <div style="position:relative; z-index:-1"><img src="../images/ft_promocao1.jpg" class="img-responsive"></div>
             </div>
             <div class="box-ft">
-                <div style="position: absolute; width:100%; border-top:8px dotted #fff; z-index: 20; top: -4px"></div>
-                <div style="position:relative; z-index:-1"><img src="https://www.triibo.com.br/cafedoponto/images/ft_promocao2.jpg" class="img-responsive"></div>
+                <div style="position:relative; z-index:-1"><img src="../images/ft_promocao2.jpg" class="img-responsive"></div>
             </div>
             <div class="box-ft">
-                <div style="position: absolute; width:100%; border-top:8px dotted #fff; z-index: 20; top: -4px"></div>
-                <div style="position:relative; z-index:-1"><img src="https://www.triibo.com.br/cafedoponto/images/ft_promocao3.jpg" class="img-responsive"></div>
+                <div style="position:relative; z-index:-1"><img src="../images/ft_promocao3.jpg" class="img-responsive"></div>
             </div>
         </div>
 
 
     </div>
 
-    <script type="text/javascript" src="https://www.triibo.com.br/cafedoponto/frontendjs/jquerym.min.js"></script>
+    <script type="text/javascript" src="../frontendjs/jquerym.min.js"></script>
 
 </body>
 

@@ -1,83 +1,74 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="<%= ROUTERPATH %>/normalize.css">
-    <link rel="stylesheet" href="<%= ROUTERPATH %>/bootstrap.min.css">
-    <link rel="stylesheet" href="<%= ROUTERPATH %>/wifi.css">
-    <link rel="stylesheet" href="<%= ROUTERPATH %>/font-awesome.min.css">
-    <link rel="stylesheet" href="<%= ROUTERPATH %>/montserrat.css">
-    <link rel="stylesheet" href="<%= ROUTERPATH %>/material-font.css">
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.4.1/firebaseui.css" />
-    <script src="https://cdn.firebase.com/libs/firebaseui/2.4.1/firebaseui.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/wifi.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/montserrat.css">
+    <link rel="stylesheet" href="../css/material-font.css">
+
 </head>
 
-
 <body class="wifilogin">
-    <div class="container">
+
+    <div class="container" style=" height:100vh; position:relative">
         <div class="row">
             <div class="col-md-6 col-md-offset-3 col-xs-12">
                 <div class="notificationbox">
                     <div class="cadastrar">
                         <div class="interna">
                             <form method="post" action="<%= ROUTERPATH %>/cadastrar" id="cadastroform">
-                                <div class="headerwifi">
-                                    <div style="text-align: center; width: 100%;">
-                                        <p><img class="iconTriiboWifi" src="<%= ROUTERPATH %>/logo_cafe_ponto.jpg" width="160" /><br><br></p>
-                                    </div>
-                                </div>
-                                <p><i class="material-icons" style="font-size: 34px; margin-top: 70px">sentiment_very_satisfied</i></p>
+
+                                <div style="text-align:center; display:block"><i class="icon_happy_face"></i></div>
                                 <p style="font-size: 16px"> Olá, este é seu <strong>1º acesso</strong>!! </p>
                                 <div class="text-left primeiro-acesso">
                                     <p>Confira seus dados e clique em <strong>OK</strong> para continuar</p>
-                                    <hr style="border-color:#9A561A">
-                                    <p style="color:#221F1F">» Nome: <b> <%= USER_NOME %> </b></p>
-                                    <p style="color:#221F1F">» Email: <b> <%= USER_LOGIN %> </b></p>
-                                    <hr style="border-color:#9A561A">
-                                    <p> Algo errado? Clique em <strong>Voltar</strong></p>
-                                </div>
-                                <a onclick="hidecadastrar()" class="btn btn-default" style="width: 25%; float: left; text-align: center; margin: 10px 10px 10px 30px;">
-                                    << Voltar</a>
 
-                                        <a onclick="formcadastro()" class="btn btn-default" style="background-color:#CD6E18; color:#000000; width: 25%; float: right; text-align: center; margin: 10px 30px 10px 10px"><strong>OK >></strong></a>
-                                        </p>
+                                    <p style="color:#fff">» Nome: <b> <%= USER_NOME %> </b></p>
+                                    <p style="color:#fff">» Email: <b> <%= USER_LOGIN %> </b></p>
+
+                                </div>
+                                <a onclick="hidecadastrar()" class="btn btn-primary" style="width: 25%; float: left; text-align: center; margin: 10px 10px 10px 30px;">
+                                    <b>Corrigir</b></a>
+
+                                <a onclick="formcadastro()" class="btn btn-warning" style="background-color:#CD6E18; color:#fff; width: 25%; float: right; text-align: center; margin: 10px 30px 10px 10px"><strong>OK</strong></a>
+
                             </form>
                         </div>
                     </div>
                     <div class="aguarde" style="color:#fff;">
-                        <p><br><br><img class="iconTriiboWifi" src="<%= ROUTERPATH %>/logo_cafe_ponto.jpg" width="160" /><br></p>
+                        <p><br><br><img class="iconTriiboWifi" src="../images/logo_cafe_ponto.jpg" width="160" /><br></p>
                         <span style="font-size:16px; font-weight:500;">Aguarde...</span>
                         <!-- COFFEE -->
                         <div class="container-coffee">
                             <div class="mug-coffee">
                                 <div class="smoke-container">
                                     <svg width="80px" height="53px" viewbox="0 0 31 53">
-                                                                        <g stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                                                                            <g class="smokes" transform="translate(.500000, .500000)" stroke="#5d5d5d" stroke-width="7">
-                                                                                <g class="smoke-1">
-                                                                                    <path id="Shape1" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
-                                                                                </g>
-                                                                                <g class="smoke-2">
-                                                                                    <path id="Shape2" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
-                                                                                </g>
-                                                                                <g class="smoke-3">
-                                                                                    <path id="Shape3" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
-                                                                                </g>
-                                                                            </g>
-                                                                        </g>
-                                                                    </svg>
+                                        <g stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
+                                            <g class="smokes" transform="translate(.500000, .500000)" stroke="#fff" stroke-width="7">
+                                                <g class="smoke-1">
+                                                    <path id="Shape1" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+                                                </g>
+                                                <g class="smoke-2">
+                                                    <path id="Shape2" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+                                                </g>
+                                                <g class="smoke-3">
+                                                    <path id="Shape3" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
                                 </div>
                                 <div class="mug"></div>
                             </div>
                         </div>
                     </div>
                     <div class="error">
-                        <div class="interna" style="padding: 10px 20px">
-                            <span class="title"><i class="material-icons" style="font-size: 38px">sentiment_very_dissatisfied</i><br><br>Ops! Algo deu errado...</span>
+                        <div class="interna">
+                            <span class="title"><span class="icon_sad_face"></span>Ops! Algo deu errado...</span>
+
                             <span class="errormsg">Verifique o usuário e a senha informados</span><br>
                             <%
 							if(ERROR_CODE == 6){
@@ -86,71 +77,63 @@
                                 <%
 							}
 							%>
-                                    <p><a onclick="hideerror()" class="btn btn-default btn-sm" style="text-align: center; color: #231F20">VOLTAR</a></p>
+                                    <p><a onclick="hideerror()" class="btn btn-primary btn-sm" style="text-align: center; color: #fff">VOLTAR</a></p>
                         </div>
                     </div>
                     <div class="respSenha">
                         <div class="interna" style="padding: 0 20px; text-align: center">
                             <span class="title"><i class="material-icons" style="font-size: 32px">warning</i><br><br>Mensagem de alteração de senha enviada para seu email!</span>
 
-                            <p><a onclick="hideerror()" class="btn btn-default" style="text-align: center; color: #231F20">Fechar</a></p>
+                            <p><a onclick="hideerror()" class="btn btn-primary" style="text-align: center; color: #fff">Fechar</a></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="headerwifi">
                     <div style="text-align: center; width: 100%;">
-                        <p><img class="iconTriiboWifi" src="<%= ROUTERPATH %>/logo_cafe_ponto.jpg" width="160" /></p>
+                        <p><img class="iconTriiboWifi" src="../images/logo_cafe_ponto.jpg" width="160" /></p>
+
                     </div>
                 </div>
 
+                <div class="clearfix"></div>
+                <div class="col-md-12">
 
-                <div class="col-xs-12" style="padding: 55px 22px 0 12px">
+                    <br><br><br><br>
 
+                    <center>
+                        <p style="font-size: 14px">Login com :</p>
 
-                    <div class="clear showdlonly">
-                        <div class="tracobranco"></div>
-                        <a onclick="showHideDL(true)" class="spaceing more">
-                            <div class="labelBranco">
-                                Não quero baixar agora
-                                <img src="<%= ROUTERPATH %>/button.gif" class="fright bbutton" />
-                            </div>
-                        </a>
-                    </div>
+                        <a onclick="facebooklogin()" class="btn btn-default btn-circle btn-lg" style="margin: 6px; background-color: #3B5998; border-color: #3B5998; color:#fff; padding: 16px 18px "><span class="fa fa-facebook fa-lg "></span></a>
+                        <!-- <% if(os != 'ios-captive' || os != 'ios'){ %>                            -->
+                        <a onclick="googlelogin()" class="btn btn-default btn-circle btn-lg" style="margin: 6px; padding: 10px"><img src="../images/icon-google.png" width="26" height="27" /></a>
+                        <!-- <%}%> -->
 
+                        <p>Ou utilizar meu <strong>e-mail</strong></p>
 
-                    <p class="text-center" style="font-size: 14px"> <br> Bem-vindo ao <span style="font-weight: 500"> Café do Ponto Wi-Fi</span>
-                    </p>
+                        <div class="form-group spaceing ">
+                            <form method="post" action="<%= ROUTERPATH %>/dologin" id="mailform">
+                                <input type="text" class="inputWifi" name="nome" placeholder="Nome" value="" />
+                                <input style="text-transform: lowercase" type="text" class="inputWifi" name="user" placeholder="Email" value="" />
+                                <input type="password" class="inputPass" name="password" id="password" placeholder="Senha" />
+                                <button class="button inputWifi" type="button" id="showPassword" style="width:auto; display: block; font-size: 20px; background:transparent;  cursor: pointer; float: right;  color:#fff; text-align: center; padding: 6px 16px"><i class="material-icons">visibility</i></button>
+                                <!--<a href="#" class="btn bn-link" style="color: #fff; text-align: right" data-toggle="modal" data-target="#modalEsqueciSenha">Esqueci minha senha</a>-->
+                                <a class="btn btn-primary btn-lg btn-primary-sm" style="text-align:center; margin-top: 22px" onclick="formlogin()">Entrar</a>
 
-                    <div class="col-xs-12">
-                        <center>
-                            <p style="font-size: 14px; margin-top: 10px">Login com:</p>
+                            </form>
+                        </div>
 
-                            <a onclick="facebooklogin()" class="btn btn-default btn-lg" style="margin: 8px; background-color: #fff; border-color: #fff; color:#2F68A9; padding: 10px; text-align: center; font-weight: 500; font-size: 14px ">Facebook</a>
-                            <% if(os == 'ios-captive' || os == 'ios'){ %>
-
-                                <% }else{ %>
-                                    <a onclick="googlelogin()" class="btn btn-default btn-lg" style="margin: 6px; background-color: #D84D40; border-color: #D84D40; color:#fff; padding: 10px; text-align: center; font-weight: 500; font-size: 14px ">Google</a>
-                                    <%}%>
-                                        <a href="#" class="btn btn-default btn-lg" style="margin: 6px; background-color: #4A4A4A; border-color: #4A4A4A; color:#fff; padding: 10px; text-align: center; font-weight: 500; font-size: 14px" data-toggle="modal" data-target="#modalEmail">Email</a>
-
-                        </center>
-                        <p> </p>
-                    </div>
+                    </center>
 
 
-                    <% if(os == 'ios-captive' || os == 'ios'){ %>
-                        <a class="btn btn-link" href="https://itunes.apple.com/us/app/triibo/id1118996431?l=pt&ls=1&mt=8" style="color: #fff; text-align: center;  width: 45%; float: right"><i class="material-icons" style="font-size: 16px;">phone_iphone</i> Baixe o App</a>
-                        <% }else{ %>
-                            <a class="btn btn-link" href="https://play.google.com/store/apps/details?id=br.com.sysmobil.triiboclient&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-                                style="color: #fff; text-align: center; width: 45%; float: right"><i class="material-icons" style="font-size: 16px;">phone_android</i> Baixe o App</a>
-                            <% } %>
+                    <!--<% if(os != 'ios-captive'){ %>	
+								<a href="https://app.triibo.com.br/#/termosdeuso">
+									<div class="tinylink"><i class="material-icons">description</i> Termos de Uso</div>
+								</a>
+								<% } %>-->
 
 
-
-                                <a class="btn btn-link" href="termos_de_uso.html" style="color: #fff; text-align: center; width: 45%; float: left"><i class="material-icons" style="font-size: 16px;">description</i> Termos de Uso</a>
-
-                                <div class="spaceblock"></div>
+                    <div class="spaceblock"></div>
 
                 </div>
 
@@ -166,7 +149,8 @@
 
             </div>
         </div>
-        <div class="powered">powered by <img src="<%= ROUTERPATH %>/mini_logo_triibo.png"></div>
+
+        <div class="powered">powered by <img src="../images/mini_logo_triibo.png"></div>
     </div>
 
     <!-- Modal EMAIL-->
@@ -238,13 +222,32 @@
         </div>
     </div>
 
-    <!--<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-	 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
-    <script type="text/javascript" src="<%= ROUTERPATH %>/jquery.min.js"></script>
-    <script type="text/javascript" src="<%= ROUTERPATH %>/jquery.mask.min.js"></script>
-    <script type="text/javascript" src="<%= ROUTERPATH %>/bootstrap.min.js"></script>
-    <script type="text/javascript" src="<%= ROUTERPATH %>/login.js"></script>
-    <script type="text/javascript" src="<%= ROUTERPATH %>/detectmobile.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="../frontendjs/jquery.min.js"></script>
+    <script type="text/javascript" src="../frontendjs/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="../frontendjs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../frontendjs/login.js"></script>
+    <script type="text/javascript" src="../frontendjs/detectmobile.js"></script>
+    <script>
+        var onresize = function() {
+            width = document.body.clientWidth;
+            height = document.body.clientHeight;
+            if (height <= 490) {
+
+                $('.powered').css({
+                    "display": "none"
+                });
+            } else {
+
+                $('.powered').css({
+                    "display": "block"
+                });
+            }
+
+        }
+        window.addEventListener("resize", onresize);
+    </script>
 
     <script type="text/javascript">
         //Intitialize Firebase to handle reCaptcha
